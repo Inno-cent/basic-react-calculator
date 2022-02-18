@@ -18,7 +18,7 @@ function App() {
 
   const calculate = () => {
     try {
-      setResult(eval(result).toString());
+      setResult(eval(result).toString() || "") + "";
     } catch (err) {
       setResult("Error");
     }
